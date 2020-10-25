@@ -5,3 +5,12 @@ function map(array, callbackFunction) {
   }
   return newArray;
 }
+
+function reduce(array, callbackFunction, startingPoint) {
+  let startingAmount = (!!startingPoint) ? startingPoint : array[0]
+  let i = (!!startingPoint) ? 0 : 1
+  for (; i < array.length; i++) {
+    startingAmount = callbackFuntion(array[i]. startingAmount)
+  }
+  return startingAmount
+}
