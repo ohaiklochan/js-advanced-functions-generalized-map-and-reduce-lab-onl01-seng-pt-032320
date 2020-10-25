@@ -10,7 +10,7 @@ function reduce(array, callbackFunction, startingPoint) {
   let startingAmount = (!!startingPoint) ? startingPoint : array[0]
   let i = (!!startingPoint) ? 0 : 1
   for (; i < array.length; i++) {
-    startingAmount = callbackFunctionntion(array[i]. startingAmount)
+    startingAmount = callbackFunction(array[i]. startingAmount)
   }
   return startingAmount
 }
