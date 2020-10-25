@@ -7,10 +7,10 @@ function map(array, callbackFunction) {
 }
 
 function reduce(array, callbackFunction, startingPoint) {
-  let startingAmount = (!!startingPoint) ? startingPoint : array[0]
+  let startAmount = (!!startingPoint) ? startingPoint : array[0]
   let i = (!!startingPoint) ? 0 : 1
   for (; i < array.length; i++) {
-    startingAmount = callbackFunction(array[i]. startingAmount)
+    startingAmount = callbackFunction(array[i]. starAmount)
   }
-  return startingAmount
+  return startAmount
 }
